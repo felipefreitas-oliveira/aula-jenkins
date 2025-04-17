@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/hello")
 public class HelloController {
 
+    //metodo busca usuario
     @GetMapping("/name")
     public String helloUser(@PathVariable("name") String name){
         return "Seja bem vindo " + name;
